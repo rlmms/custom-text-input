@@ -1,0 +1,38 @@
+<html>
+<head>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
+<script>
+</script>
+</head>
+	<body onload="setup()"> 
+		<div id="container">
+			
+			<p></p> <br> <br> 
+			<div class="main-area">
+				<div id="header">
+					<h4>Custom<span>text input</span>component</h4>
+					<p style="font-style: italic; color: rgb(105, 105, 105)">for matching tags</p>
+				</div>
+				<div class="custom-input-container">
+					<span class="hashtag-icon">#</span><div id="custom-input" contenteditable></div><span id="clear-icon" onclick="" class="clear-icon">X</span>
+				</div>
+				<div id="info">
+					<span style="font-style: italic; font-size: .8em">type #hashtag  </span>
+					<span style="display: none"> <!-- DISABLE FOR NOW -->
+						<span id="matches-count">matches count: <span id="matches-count-number">00</span></span>
+						<span id="character-count">character  count: <span id="character-count-number">00</span></span>
+					</span>
+				</div>
+			</div>
+
+			<div class="debug" style="display: none">
+				<button id="button-debug" style="padding: 5px; " onclick="addCSSClasses()">Debug On</button>			
+				<div id="list-container"></div>	
+			</div>
+
+
+		</div>
+	</body>
+</html>
+
